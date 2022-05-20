@@ -1,0 +1,21 @@
+.background{
+    color: #88ca8b;
+}
+.h3{
+    font-size: 50pt;
+}
+#explanation{
+    color: rgb(82, 72, 72);
+    font-style: bold
+}
+.ul {
+    color: #acb680;
+    font-style:italic
+}
+.strong{
+    color: #dd8804
+}
+.content{
+    font-style:italic; color:blue;
+    background-color: rgb(139, 114, 114);
+}
