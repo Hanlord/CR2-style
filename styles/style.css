@@ -49,8 +49,6 @@ nav li a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 80px;
-  margin-bottom: 80px;
 }
 
 footer {
@@ -110,13 +108,12 @@ figcaption {
     background-color: #db8b13;
   }
   .itemnav {
-    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .container {
     display: -webkit-box;
@@ -129,9 +126,6 @@ figcaption {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   .bgfoot {
     display: -webkit-box;

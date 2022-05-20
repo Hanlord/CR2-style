@@ -33,8 +33,7 @@ nav li a:hover {
     display:flex;
     justify-content:space-around;
     align-items: center;
-    margin-top: 80px;
-    margin-bottom:80px;
+    
 }
 
 footer {
@@ -90,15 +89,15 @@ figcaption {
       }
     
     .itemnav{
-        width:100%;
+        
         display:flex;
-        justify-content: space-between;
+        justify-content: center;
+        
     } 
     .container{
         display:flex;
         flex-direction: column;
         justify-content:space-between;
-        align-items: center;
 
       }
     .bgfoot{
