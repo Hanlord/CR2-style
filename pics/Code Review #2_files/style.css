@@ -100,7 +100,7 @@ figcaption {
 
 @media (max-width: 480px) {
   .header {
-    width: 100%;
+    width: 70%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -111,28 +111,13 @@ figcaption {
   body {
     background-color: #db8b13;
   }
-  nav ul {
-    list-style-type: none;
+  .itemnav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    border-top: 1px solid grey;
-    border-bottom: 1px solid grey;
-    padding: 10px;
-  }
-  .itemnav {
-    width: 50%;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 0.5px 0.5px 0.5px 8px 0.5px 0.5px 0.5px;
-        grid-template-columns: 0.5px 0.5px 0.5px 8px 0.5px 0.5px 0.5px;
-    gap: 60px;
+    text-align: left;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .container {
     display: -webkit-box;
@@ -168,15 +153,13 @@ figcaption {
     position: relative;
     top: -100px;
     padding: 20px;
-    margin: 1px;
-    left: 1px;
-    width: 110%;
+    margin: 5px;
   }
 }
 
 @media (min-width: 768px) and (max-device-width: 1366px) {
   .header {
-    width: 60%;
+    width: 90%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -188,15 +171,10 @@ figcaption {
     background-color: #89ec6a;
   }
   .itemnav {
-    width: 50%;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 0.5px 0.5px 0.5px 8px 0.5px 0.5px 0.5px;
-        grid-template-columns: 0.5px 0.5px 0.5px 8px 0.5px 0.5px 0.5px;
-    gap: 10px;
+    width: 60%;
   }
   .container {
-    width: 60%;
+    width: 100%;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 50% 50%;
@@ -225,7 +203,6 @@ figcaption {
     top: -100px;
     padding: 20px;
     margin: 5px;
-    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
