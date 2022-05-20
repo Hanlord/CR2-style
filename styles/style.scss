@@ -83,8 +83,51 @@ figcaption {
     background-color:black
 }
 
-@media (max-width: 480px){
-    .main{
-    flex-direction: row;
+//mobile//
+@media (max-width: 480px) {
+    body{
+        background-color: rgb(219, 139, 19);
+      }
+    
+    .itemnav{
+        width:100%;
+        display:flex;
+        justify-content: space-between;
+    } 
+    .container{
+        display:flex;
+        flex-direction: column;
+        justify-content:space-between;
+        align-items: center;
+
+      }
+    .bgfoot{
+        display:flex;
+        justify-content:space-between;
+        
+    }
+}
+
+//tablet//
+@media (min-width:1024px) {
+    body{
+        background-color: rgb(137, 236, 106);
+      }
+    .itemnav{
+        width:100%;
+        display:flex;
+        justify-content: space-between;
+    } 
+    .container{
+        display:flex;
+        flex-direction: column;
+        justify-content:space-between;
+        align-items: center;
+
+      }
+    .bgfoot{
+        display:flex;
+        justify-content:space-between;
+        
     }
 }
