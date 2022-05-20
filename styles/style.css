@@ -30,7 +30,7 @@ nav ul {
 nav li a {
   text-decoration: none;
   color: #111010;
-  padding: 3em;
+  padding: 1em;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
@@ -40,11 +40,13 @@ nav li a:hover {
 }
 
 .container {
-  text-align: center;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: minmax(10vh, auto);
+  text-align: center;
+  gap: 1em 1em;
 }
 
 footer {
@@ -109,7 +111,7 @@ figcaption {
             justify-content: space-between;
   }
   body {
-    background-color: #db8b13;
+    background-color: #aaa398;
   }
   nav ul {
     list-style-type: none;
@@ -146,6 +148,17 @@ figcaption {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1px 0;
+    width: 100%;
+    clear: both;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    bottom: 0;
+  }
   .bgfoot {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -176,7 +189,7 @@ figcaption {
 
 @media (min-width: 768px) and (max-device-width: 1366px) {
   .header {
-    width: 60%;
+    width: 55%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -185,7 +198,7 @@ figcaption {
             justify-content: space-between;
   }
   body {
-    background-color: #89ec6a;
+    background-color: #e4ece2;
   }
   .itemnav {
     width: 50%;
@@ -224,8 +237,9 @@ figcaption {
     position: relative;
     top: -100px;
     padding: 20px;
-    margin: 5px;
+    margin: 1px;
     width: 100%;
+    left: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
