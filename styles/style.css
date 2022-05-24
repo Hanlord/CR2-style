@@ -21,7 +21,7 @@
   list-style-type: none;
 }
 
-.navul {
+nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -33,10 +33,10 @@
           align-items: center;
   border-top: 1px solid grey;
   border-bottom: 1px solid grey;
-  padding: 1px;
+  padding: 10px;
 }
 
-.item1 {
+nav li a {
   text-decoration: none;
   color: #111010;
   padding: 1em;
@@ -61,6 +61,7 @@
 
 .container img {
   width: 100%;
+  margin-top: 20px;
 }
 
 .bg-foot {
@@ -105,9 +106,9 @@ figcaption {
   text-align: center;
   opacity: 0.8;
   position: relative;
-  top: -160px;
+  top: -100px;
   padding: 20px;
-  margin: 50px;
+  width: 95%;
 }
 
 @media (max-width: 1000px) {
