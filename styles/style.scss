@@ -7,16 +7,21 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
-nav ul {
+.itemnav{
+    display:flex;
+    justify-content: space-between;
     list-style-type: none;
+}
+
+.navul {
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-top: 1px solid grey;
     border-bottom: 1px solid grey;
-    padding: 10px;
+    padding: 5px;
 }
-nav li a {
+.item1 {
     text-decoration: none;
     color: rgb(17, 16, 16);
     padding: 1em;
@@ -24,7 +29,7 @@ nav li a {
 
 }
 
-nav li a:hover {
+.item1 a:hover {
     background-color: rgb(135, 35, 202); 
 }
 
@@ -36,7 +41,9 @@ nav li a:hover {
     text-align: center;
     gap:1em 1em;
     
-    
+    img{
+        width:100%;
+    }
 }
 
 footer {
@@ -68,7 +75,7 @@ footer {
     padding:10px
 }
 
-figcaption {
+.fgcaption {
     display: flex;
     justify-content: space-around;
     background-color: black;
@@ -76,128 +83,81 @@ figcaption {
     font-style: italic;
     text-align: center;
     opacity: 0.8;
-    position: relative;
+    position: absolute;
     top:-160px;
     padding:20px;
     margin:60px;
+    width: 100%;
 
   }
 .bgfoot{
     background-color:black
 }
 
-//mobile//
-@media (max-width: 480px) {
+@media (max-width:1000px){
     .header{
-        width: 100%;
-        display:flex;
-        justify-content:space-between;
+        width: 55%;
+        
+    }
+    .bodybg{
+        background-color: rgb(228, 236, 226);
+      }
+    .itemnav{
+        width:30%;
+        display: grid;
+        grid-template-columns: 0.5px 0.5px 0.5px 8px 0.5px 0.5px 0.5px;
+        gap: 80px;
+        
+    } 
+
+
+    .container{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5,1fr);
     }
 
-    body{
+    .bgfoot{
+        display:flex;
+        justify-content:space-between;
+        
+    }
+    
+}
+
+//mobile//
+@media screen and (max-width: 480px) {
+    .header{
+        width: 100%;
+        
+    }
+
+    .bodybg{
         background-color: rgb(170, 163, 152);
       }
 
-    nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-top: 1px solid grey;
-    border-bottom: 1px solid grey;
-    padding: 10px;
     
-    }
     
     .itemnav{
-        width: 50%;
+        width: 30%;
         display: grid;
         grid-template-columns: 0.5px 0.5px 0.5px 8px 0.5px 0.5px 0.5px;
-        gap: 60px;
+        gap: 80px;
         
     }
 
    
     .container{
-        display:flex;
-        flex-direction: column;
-        justify-content:space-between;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9, 1fr);
 
       }
-      footer {
-        background-color: black;
-        color: white;
-        text-align: center;
-        padding: 1px 0;
-        width: 100%;
-        clear: both;
-        font-family: 'Times New Roman', Times, serif;
-        position:relative;
-        bottom: 0;
-    }
-    .bgfoot{
+      
+    .bg-foot{
         display:flex;
         justify-content:space-between;
         
     }
-    figcaption {
-        display: flex;
-        justify-content: space-around;
-        background-color: black;
-        color: white;
-        font-style: italic;
-        text-align: center;
-        opacity: 0.8;
-        position: relative;
-        top:-100px;
-        padding:20px;
-        margin:1px;
-        left:1px; 
-        width:110%;    
-    } 
     
 }
 
 //tablet//
-@media (min-width:768px) and (max-device-width: 1366px) {
-    .header{
-        width: 55%;
-        display:flex;
-        justify-content:space-between;
-    }
-    body{
-        background-color: rgb(228, 236, 226);
-      }
-    .itemnav{
-        width:50%;
-        display: grid;
-        grid-template-columns: 0.5px 0.5px 0.5px 8px 0.5px 0.5px 0.5px;
-        gap: 10px;
-        
-    } 
-    .container{
-        width: 60%;
-        display: grid;
-        grid-template-columns: 50% 50%;
-      }
-    .bgfoot{
-        display:flex;
-        justify-content:space-between;
-        
-    }
-    figcaption {
-        display: flex;
-        justify-content: space-around;
-        background-color: black;
-        color: white;
-        font-style: italic;
-        text-align: center;
-        opacity: 0.8;
-        position: relative;
-        top:-100px;
-        padding:20px;
-        margin:1px;
-        width:100%; 
-        left:10px;    
-        } 
-}
