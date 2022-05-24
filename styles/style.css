@@ -33,7 +33,7 @@
           align-items: center;
   border-top: 1px solid grey;
   border-bottom: 1px solid grey;
-  padding: 5px;
+  padding: 1px;
 }
 
 .item1 {
@@ -56,13 +56,14 @@
   grid-auto-rows: minmax(10vh, auto);
   text-align: center;
   gap: 1em 1em;
+  position: relative;
 }
 
 .container img {
   width: 100%;
 }
 
-footer {
+.bg-foot {
   background-color: black;
   color: white;
   text-align: center;
@@ -92,7 +93,7 @@ footer {
   padding: 10px;
 }
 
-.fgcaption {
+figcaption {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -103,15 +104,10 @@ footer {
   font-style: italic;
   text-align: center;
   opacity: 0.8;
-  position: absolute;
+  position: relative;
   top: -160px;
   padding: 20px;
-  margin: 60px;
-  width: 100%;
-}
-
-.bgfoot {
-  background-color: black;
+  margin: 50px;
 }
 
 @media (max-width: 1000px) {
